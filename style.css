@@ -1,0 +1,385 @@
+:root {
+  --bg1: #252525;
+  --bg2: #313130;
+  --tc: #fffefe;
+  --dtc: #9f9f9f;
+  --bc: #ffb632;
+  /* --mtc: #94a3b8; */
+  --border: 2px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg1);
+  color: var(--tc);
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--tc);
+  background-color: var(--bc);
+  border: 1px solid var(--bc);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--bg1);
+  color: var(--bc);
+}
+
+/* ======================================= */
+/* ================NAV-BAR================ */
+/* ======================================= */
+
+.navbar {
+  background-color: var(--bg1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  width: 100%;
+  padding: 1rem 8rem 1rem 4rem;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 2.8rem;
+  width: auto;
+  margin-left: 1.5rem;
+  /* border: 1px solid red; */
+}
+
+.nav-list {
+  margin-right: 1rem;
+  /* border: 1px solid red; */
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: var(--tc);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav-list ul li a:hover {
+  color: var(--bc);
+}
+
+/* ==================================== */
+/* ================HERO================ */
+/* ==================================== */
+
+.hero {
+  display: flex;
+  /* align-items: end; */
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  /* border: none; */
+  /* border: var(--border); */
+  padding: 1rem 2rem 0 2rem;
+}
+.hero-wrapper {
+  padding: 1rem 8rem 0 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* border: 2px solid gold; */
+  /* border: none; */
+}
+/* left hero  */
+/* left hero  */
+.left-hero {
+  width: 50%;
+  line-height: 1.2;
+  margin-top: -5rem;
+  margin-left: 3rem;
+  /* border: var(--border); */
+}
+.left-hero h3 {
+  font-size: 1.5rem;
+}
+.left-hero h1 {
+  font-size: 5.2rem;
+}
+.left-hero span {
+  color: gold;
+}
+.left-hero .surname {
+  font-size: 1rem;
+  color: transparent;
+  /* background: linear-gradient(to right, gold 0%, #B2DDFB 100%); */
+  background: linear-gradient(to right, gold 0%, #b2ddfb 70%);
+  background-clip: text;
+}
+.left-hero h4 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  color: var(--tc);
+}
+
+/* right hero  */
+/* right hero  */
+.right-hero {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  height: 100%;
+}
+
+/* ===================================== */
+/* ================ABOUT================ */
+/* ===================================== */
+
+.about {
+  height: 34rem;
+  padding: 7rem 2.5rem;
+  background-color: var(--bg2);
+  /* border: var(--border); */
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  margin: 0;
+  /* border: var(--border); */
+}
+
+.left-about {
+  background-image: url(about_shap_bg.png);
+  background-size: fill;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: var(--border); */
+}
+.left-about h1 {
+  font-size: 3.5rem;
+}
+.right-about {
+  flex: 1.5;
+  height: 100%;
+  padding: 0 5rem 2rem 1rem;
+  font-size: 1rem;
+  /* border: var(--border); */
+}
+.right-about p {
+  padding: 1rem;
+  color: var(--dtc);
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cv-btn {
+  background-color: var(--bg1);
+  color: var(--bc);
+}
+.cv-btn:hover {
+  background-color: var(--bc);
+  color: var(--tc);
+}
+
+/* ======================================== */
+/* ================SERVICES================ */
+/* ======================================== */
+
+.service {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.service-head {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-para {
+  padding: 1rem;
+  font-size: 1.2rem;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: var(--dtc);
+  line-height: 1.6;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.service-card {
+  flex: 0 0 calc(50% - 2rem);
+  min-width: 500px;
+  min-height: 350px;
+  max-width: 500px;
+  border-radius: 1rem;
+  /* line-height: 30px; */
+  padding: 60px 80px;
+  text-align: left;
+  transition: scale 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  scale: 1.05;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  margin-bottom: 1.8rem;
+}
+
+.service-icon img {
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.service-1 {
+  background: linear-gradient(to right, #24cbe9 0%, #2384e8 70%);
+}
+.service-2 {
+  background: linear-gradient(to right, #e9b924 0%, #e7a225 70%);
+}
+
+.service-3 {
+  background: linear-gradient(to right, #d9309f 0%, #b138d7 70%);
+}
+
+.service-4 {
+  background: linear-gradient(to right, #05b35f 0%, #06c22a 70%);
+}
+
+/* ================================ */
+/* ============CONTACT-US=========== */
+/* ================================ */
+
+.contact-me {
+  padding: 7rem 4rem;
+  background-color: var(--bg2);
+  /* border: var(--border); */
+}
+
+.contact-head {
+  /* border: var(--border); */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #cccccc;
+}
+.contact-wrapper {
+  /* border: var(--border); */
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* contact left  */
+/* contact left  */
+/* contact left  */
+/* contact left  */
+.contact-left {
+  /* border: var(--border); */
+  flex: 1;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-info h3 {
+  /* border: var(--border); */
+  margin-bottom: 0.6rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--dtc);
+}
+
+.follow-me {
+  /* border: var(--border); */
+  margin: 1rem 0;
+}
+.social-media ul {
+  /* border: var(--border); */
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem 0;
+  
+}
+.social-media ul li a {
+  color: var(--dtc);
+}
+.social-media ul li a:hover {
+  color: var(--bc);
+}
+
+/* contact right  */
+/* contact right  */
+/* contact right  */
+/* contact right  */
+.contact-right {
+  border: var(--border);
+  flex: 2;
+  color: var(--dtc);
+  font-size: 15px;
+}
+.form-wrapper {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
